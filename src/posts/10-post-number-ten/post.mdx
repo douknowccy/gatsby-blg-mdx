@@ -1,0 +1,72 @@
+---
+title: Gatsby Tutorial
+slug: gatsby-tutorial
+image: ./images/js-1.png
+date: 2020-12-07
+author: Kimi Chen
+category: gatsby
+readTime: 34
+---
+
+import { Link } from 'gatsby'
+import { FiInfo } from 'react-icons/fi'
+import { Counter, LikeButton } from '../../components/Complete'
+
+## my first mdx file
+
+**I'm baby pug williamsburg vegan, chicharrones single-origin coffee**
+health goth pop-up cornhole. Paleo biodiesel skateboard enamel pin gochujang, chicharrones salvia art party. Health goth paleo sartorial, letterpress four loko hot chicken knausgaard chambray before they sold out palo santo glossier vape. Before they sold out tattooed normcore direct trade, hashtag pour-over leggings heirloom organic. Literally ugh tbh hella. Crucifix palo santo adaptogen whatever shabby chic poutine authentic. Wolf intelligentsia flexitarian hoodie.
+
+<div className="code">
+
+```js
+const firstName = 'john'
+const lastName = 'smith'
+```
+
+</div>
+
+<div className="nice-text">
+  <h3>nice text</h3>
+  <FiInfo className="nice-text-icon" />
+  Seitan hell of wayfarers, edison bulb austin iceland heirloom. Post-ironic
+  cardigan PBR&B offal coloring book sriracha organic XOXO flexitarian migas
+  cornhole etsy. Banjo poutine flexitarian pork belly shaman subway tile
+  tattooed biodiesel. Hammock twee subway tile, cronut food truck health goth
+  hella +1 waistcoat lyft semiotics marfa VHS photo booth vinyl. Shabby chic
+  lumbersexual messenger bag bitters. Marfa gluten-free pork belly next level
+  celiac synth direct trade.
+</div>
+
+<h2>React components</h2>
+<Counter />
+
+```jsx
+const myH2 = ({ children, title }) => {
+  if (title) {
+    return (
+      <HeadingTwo>
+        <h2>{children}</h2>
+        <div className="underline"></div>
+      </HeadingTwo>
+    )
+  }
+  return (
+    <h2
+      style={{
+        margin: '2rem 0',
+        color: 'var(--clr-grey-5)',
+      }}
+    >
+      {children}
+    </h2>
+  )
+}
+```
+
+<LikeButton />
+
+<Link to="/posts" className="btn center-btn">
+  {' '}
+  all posts
+</Link>
